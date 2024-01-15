@@ -6,9 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>안녕하세요</h1>
-  <!--
-    유사시티 커밋 메시지 test 중
-  -->
+    <div id="title" style="text-align: center;">
+        <h1>HTML TEST</h1>
+    </div>
+    <div id="content">
+        <div id="top-content">
+            <p style="text-align: center;">
+                여기는 진언이 HTML practice 공간입니다. 디자인이 조금 부족해보이시나요?<br/>
+                당연하죠 왜냐하면 css를 하나도 안 썼으니까요!(사실 텍스트 중앙정렬하려고 css 조금 썼어요...)<br/>
+                발전된 걸 보고 싶으면 내일도 찾아오세요.<br/>
+                그럼 안녕!
+            </p>
+        </div>
+        <div id="center-content">
+            <div id="img" display="block" style="text-align: center;">
+                <img src="test.jpg">
+            </div>
+            <div id="explanation">
+                <p style="text-align: center;"> 
+                    제 사이트가 어떤지 평가해주세요!
+                </p>
+            </div>
+            <div id="userForm" style="text-align: center;">
+                <form action="/submit" method="post">
+                    이름: <input type="text" name="username" placeholder="사용자명"><br/>
+                    리뷰: <input type="test" name="review" placeholder="사이트 리뷰"><br/>
+                    <br/>점수<br/>
+                    <input type="radio" name="score" value="1"> 1점
+                    <input type="radio" name="score" value="2"> 2점
+                    <input type="radio" name="score" value="3"> 3점
+                    <input type="radio" name="score" value="4"> 4점
+                    <input type="radio" name="score" value="5"> 5점
+
+                </form>
+            </div>
+        </div>
+        <div id="bottom-content">
+            <div id="link" style="text-align: center;">
+                <br/>제 깃허브로 놀러오세요<br/>
+                <a href="https://github.com/parkjineon">여기 누르세요!</a>
+
+            </div>
+        </div>
+    </div>
+    
+
 </body>
 </html>
