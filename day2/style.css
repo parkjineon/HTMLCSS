@@ -61,25 +61,21 @@ nav {
 }
 
 .contactMe{
-    position: fixed;
+    position: fixed; z-index: 1;
     bottom:20px;
     right: 30px;
-    display: block;
     width: 165px;
     height: 90px;
-    flex-shrink: 0;
-
-    color: rgba(64, 57, 48, 0.80);
-
     text-align: center;
-    font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: rgb(255, 255, 255);
     border-radius: 50px;
-    border: 10px solid #BBD5F7;
-    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
+    border: 10px solid rgb(171, 195, 226);
+    background: #5397c1;
+
 }
 
 
@@ -132,7 +128,30 @@ header h1 {
     letter-spacing: -1.28px;
 }
 
-header h1 em {
+.animationCollection{
+    display: flex;
+}
+header h1 .titleAnimation{
+    font-style: normal;
+}
+
+header h1 .titleAnimation:hover{
+    color:rgb(188, 109, 231);
+    animation: vibration 0.1s infinite
+    
+}
+
+@keyframes vibration {
+    from {
+      transform: rotate(5deg);
+    }
+    to {
+      transform: rotate(-5deg);
+    }
+}
+
+
+header h1 .problemSolver{
     background: linear-gradient(
         99deg,
         rgba(15, 156, 243, 0.862) 0%,
@@ -330,8 +349,25 @@ a{
     display: flex;
     padding: 80px 120px 120px 120px;
     flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.project{
+    display: flex;
+    width: 1120px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 80px;
+    padding: 30px 0;
+    border-radius: 24px;
+    background: #E6EEFF;
+}
+
+.projects h1{
+    padding: 10px;
 }
 
 .projects .project .projectDesc h1{
@@ -339,9 +375,47 @@ a{
     padding: 0;
 }
 
+.projectDesc{
+    margin: 0;
+    padding: 0;
+    width: 437px;
+}
+
 .projectLinks{
     gap: 24px;
     display: flex;
+}
+
+.projectImg{
+    display: flex;
+    gap: 20px;
+}
+
+.project1Img1{
+    width: 155px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(./img/project1-1.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.project1Img2{
+    width: 155px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(./img/project1-2.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.project1Img3{
+    width: 155px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(./img/project1-3.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 .projects .project .projectDesc .projectLinks .notion{
