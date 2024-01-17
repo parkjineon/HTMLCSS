@@ -1,0 +1,331 @@
+.contactMe {
+    display: none;
+}
+
+
+nav {
+    display: flex;
+    width: 100vw;
+    height: 20vw;
+    padding: unset;
+    gap: unset;
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+
+.navItem {
+    color: #403930;
+    display:flex;
+    align-items: center;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 18px */
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    padding: 15vw 0;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: unset;
+    box-sizing: border-box;
+}
+
+.welcomeMessage{
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.badge{
+    display: flex;
+    padding: 3vw 6vw;
+    justify-content: center;
+    align-items: center;
+    gap: unset;
+    border-radius: 3vw;
+    background: #E6EEFF;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+header h1{
+    align-self: stretch;
+    color: #333;
+    font-family: Pretendard;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -0.1vw;
+}
+header h1 .problemSolver{
+    background: linear-gradient(99deg, #001F8F 3.58%, rgba(36, 255, 203, 0.50) 90.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Pretendard;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.1vw;
+}
+
+.headerLinkContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5vw;
+}
+
+.headerLinkContainer .github{
+    display: flex;
+    width: 30vw;
+    padding: 4vw 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: unset;
+    border-radius: 4vw;
+    background: #000;
+}
+
+.githubLink{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%; /* 21px */
+}
+
+.resume{
+    display: flex;
+    width:  30vw;
+    padding: 4vw 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: unset;
+
+    border-radius: 4vw;
+    border: 0.5vw solid #403930;  
+}
+
+.resumeLink{
+    display: flex;
+    align-items: center;
+    gap: unset;
+
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%; /* 21px */
+}
+
+a{
+    text-decoration: none;
+}
+
+.welcomePicture{
+    display: none
+}
+
+.profilePicture{
+    display: none
+}
+
+/***********************/
+/*******About Me********/
+/***********************/
+.aboutMe{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 100vw;
+
+    position: relative;
+    background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
+    padding: 15vw 6vw;
+    box-sizing: border-box;
+}
+
+.content .aboutMe h1{
+    color: #333;
+    font-family: Pretendard;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: -0.1vw;
+
+}
+
+.content .aboutMe p{
+    height: auto;
+    flex-shrink: 0;
+    color: #333;
+    font-family: Pretendard;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.1vw;
+}
+
+.stacks{
+    display: flex;
+    width:100vw;
+    box-sizing: border-box;
+    padding: 10vw 0vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    align-self: stretch;
+}
+
+.stacksContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stacks .stacksContent h1{
+    font-size: 6vw;
+}
+.stacks .stacksContent p{
+    width: 100vw;
+    color: #333;
+    font-family: Pretendard;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.stacksImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.stacksImg svg{
+    width: 20vw;
+    height: 20vw;
+}
+
+
+
+.projects{
+    display: none;
+    padding: 80px 120px 120px 120px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.project{
+    display: flex;
+    width: 1120px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 0;
+    border-radius: 24px;
+    background: #E6EEFF;
+}
+
+.projects h1{
+    padding: 10px;
+}
+
+.projects .project .projectDesc h1{
+    margin: 0;
+    padding: 0;
+}
+
+.projectDesc{
+    margin: 0;
+    padding: 0;
+    width: 437px;
+}
+
+.projectLinks{
+    gap: 24px;
+    display: flex;
+}
+
+.projectImg{
+    display: flex;
+    gap: 20px;
+}
+
+.project1Img1{
+    width: 155px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(./day2/img/project1-1.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.project1Img2{
+    width: 155px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(./day2/img/project1-2.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.project1Img3{
+    width: 155px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(./day2/img/project1-3.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.projects .project .projectDesc .projectLinks .notion{
+    color: #405BA1;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration-line: underline;
+}
+
+.projects .project .projectDesc .projectLinks .github{
+    color: #00446A;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration-line: underline;
+}
+

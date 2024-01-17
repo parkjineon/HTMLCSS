@@ -2,10 +2,21 @@
 <html lang="ko">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4902PLGTT5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4902PLGTT5');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel='stylesheet' href='./style.css'>
+    <link rel='stylesheet' href='./responsive.css' media="(max-width: 390px)">
 </head>
 
 <body>
@@ -25,21 +36,21 @@
         <div class="welcomeMessage">
             <div class="badge">👋 안녕하세요!</div>
             <h1><div class="animationCollection">
-                <div class="titleAnimation">신</div><div class="titleAnimation"></div><div class="titleAnimation">입&nbsp;</div>
-                <div class="titleAnimation">풀</div><div class="titleAnimation">스</div><div class="titleAnimation">택&nbsp;</div> 
-                <div class="titleAnimation">개</div><div class="titleAnimation">발</div><div class="titleAnimation">자</div><br />
+                <div class="titleAnimation1">신</div><div class="titleAnimation2">입&nbsp;</div>
+                <div class="titleAnimation3">풀</div><div class="titleAnimation4">스</div><div class="titleAnimation5">택&nbsp;</div> 
+                <div class="titleAnimation6">개</div><div class="titleAnimation7">발</div><div class="titleAnimation8">자</div><br />
             </div>
                 <em class="problemSolver">Problem Solver.</em><br />
                 박진언입니다.<br />
             </h1>
             <div class="headerLinkContainer">
                 <div class="github">
-                    <a class="githubLink" href="https://github.com/parkjineon" target="_blank">
+                    <a class="githubLink" onclick="onClickButton('github')" href="https://github.com/parkjineon" target="_blank">
                         Github Link
                     </a>
                 </div>
                 <div class="resume">
-                    <a class="resumeLink" href="#" target="_blank">Resume Link</a>
+                    <a class="resumeLink" onclick="onClickButton('resume')" href="#" target="_blank">Resume Link</a>
                 </div>
 
             </div>  
@@ -70,7 +81,7 @@
                 <p>지금까지 활용해 본 기술들입니다.<br/>
                 넓고 깊은 기술 스택을 얻기 위해 노력하고 있습니다</p>
             </div>
-            <div class="stacksImg1">
+            <div class="stacksImg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="121" height="121" viewBox="0 0 121 121" fill="none">
                     <path d="M22.6325 102.504L14.2063 8H106.794L98.3563 102.489L60.4438 113L22.6325 102.504Z" fill="#DE4C36"/>
                     <path d="M60.5 104.968L91.1375 96.4738L98.345 15.7288H60.5V104.968Z" fill="#DE4C36"/>
@@ -120,8 +131,6 @@
                     </clipPath>
                 </defs>
                 </svg>
-            </div>
-            <div class="stacksImg2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
                     <path d="M37.3438 56.5844C41.1646 41.301 50.7167 33.6594 66 33.6594C88.925 33.6594 91.7906 50.8531 103.253 53.7187C110.895 55.6292 117.581 52.7635 123.312 45.1219C119.492 60.4052 109.94 68.0469 94.6562 68.0469C71.7313 68.0469 68.8656 50.8531 57.4031 47.9875C49.7615 46.0771 43.075 48.9427 37.3438 56.5844ZM8.6875 90.9719C12.5083 75.6885 22.0604 68.0469 37.3438 68.0469C60.2687 68.0469 63.1344 85.2406 74.5969 88.1062C82.2385 90.0167 88.925 87.151 94.6562 79.5094C90.8354 94.7927 81.2833 102.434 66 102.434C43.075 102.434 40.2094 85.2406 28.7469 82.375C21.1052 80.4646 14.4187 83.3302 8.6875 90.9719Z" fill="#44A8B3"/>
                 </svg>
@@ -229,8 +238,25 @@
 
         </div>
     </div>
-
-
+    <script>
+        function onClickButton(type){
+            if(type==='github'){
+                // gtag("이벤트명", "액션명", {액션에 대한 상세 내용})
+                gtag("event","깃허브_버튼_클릭",{
+                    'event_catergory':'깃허브_버튼_클릭',
+                    'event_label':'깃허브_버튼_클릭'
+                })
+                alert("깃허브로 이동합니다.")
+            }
+            else if(type==='resume'){
+                gtag("event","이력서_버튼_클릭",{
+                    'event_catergory':'이력서_버튼_클릭',
+                    'event_label':'이력서_버튼_클릭'
+                })
+                alert("이력서로 이동합니다.")
+            }
+        }
+    </script>
 </body>
 
 </html>

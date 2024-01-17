@@ -3,6 +3,10 @@ nav {
     gap: 24px;
   }
 
+body{
+    margin: 0px;    
+}
+
 .navItem {
     color: #594f43;
     font-size: 20px;
@@ -73,8 +77,8 @@ nav {
     line-height: normal;
     color: rgb(255, 255, 255);
     border-radius: 50px;
-    border: 10px solid rgb(171, 195, 226);
-    background: #5397c1;
+    border: 10px solid rgb(199, 223, 255);
+    background: rgb(71, 135, 238);
 
 }
 
@@ -94,7 +98,7 @@ header{
 
 .welcomeMessage{
     display: flex;
-    width: 556px;
+    width: 580px;
     height: 464px;
     flex-direction: column;
     align-items: flex-start;
@@ -131,22 +135,62 @@ header h1 {
 .animationCollection{
     display: flex;
 }
-header h1 .titleAnimation{
-    font-style: normal;
+
+:root{
+    --delayTime: 5s;
+}
+header h1 .titleAnimation1{
+    animation: vibration 0.1s 5;
+    animation-delay: calc(var(--delayTime)+1s);
+    
 }
 
-header h1 .titleAnimation:hover{
-    color:rgb(188, 109, 231);
-    animation: vibration 0.1s infinite
+header h1 .titleAnimation2{
+    animation: vibration 0.1s 5;
+    animation-delay: 0.5s;
+    
+}
+header h1 .titleAnimation3{
+    animation:vibration 0.1s 5;
+    animation-delay: 1s;
+    
+}
+header h1 .titleAnimation4{
+    animation: vibration 0.1s 5;
+    animation-delay: 1.5s;
+    
+}
+header h1 .titleAnimation5{
+    animation: vibration 0.1s 5;
+    animation-delay: 2s;
+    
+}
+header h1 .titleAnimation6{
+    animation: vibration 0.1s 5;
+    animation-delay: 2.5s;
+    
+}
+header h1 .titleAnimation7{
+    animation: vibration 0.1s 5;
+    animation-delay: 3s;
+    
+}
+
+header h1 .titleAnimation8{
+    animation: vibration 0.1s 5;
+    animation-delay: 3.5s;
     
 }
 
 @keyframes vibration {
     from {
       transform: rotate(5deg);
+      color:rgb(192, 134, 219);
     }
+    
     to {
       transform: rotate(-5deg);
+      color:rgb(192, 134, 219);
     }
 }
 
@@ -236,7 +280,7 @@ a{
     flex-shrink: 0;
     border-radius: 500px;
     border: 10px solid #BCF2F9;
-    background: url(./img/profile.jpg), lightgray 50% / cover no-repeat;
+    background: url(./day2/img/profile.jpg), lightgray 50% / cover no-repeat;
     background-size: cover;
 }
 
@@ -290,7 +334,7 @@ a{
 }
 
 .aboutMeImg{
-    background: url(./img/aboutMe.png), 50% / cover no-repeat;
+    background: url(./day2/img/aboutMe.png), 50% / cover no-repeat;
     width: 119px;
     height: 119px;  
     position: absolute;
@@ -321,29 +365,20 @@ a{
     padding: 0px;
 }
 
-.stacksImg1{
+.stacksImg{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 80px;
 }
 
-.stacksImg2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
 
-.stacksImg1 svg{
+.stacksImg svg{
     width: 120px;
     height: 120px;
 }
 
-.stacksImg2 svg{
-    width: 120px;
-    height: 120px;
-}
 
 .projects{
     display: flex;
@@ -396,7 +431,7 @@ a{
     height: 327px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: url(./img/project1-1.png), lightgray 50% / cover no-repeat;
+    background: url(./day2/img/project1-1.png), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -405,7 +440,7 @@ a{
     height: 327px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: url(./img/project1-2.png), lightgray 50% / cover no-repeat;
+    background: url(./day2/img/project1-2.png), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -414,7 +449,7 @@ a{
     height: 327px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: url(./img/project1-3.png), lightgray 50% / cover no-repeat;
+    background: url(./day2/img/project1-3.png), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
