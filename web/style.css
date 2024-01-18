@@ -253,7 +253,7 @@ a{
     flex-shrink: 0;
     border-radius: 40vw;
     border: 1vw solid #BCF2F9;
-    background: url(./day2/img/profile.jpg), lightgray 50% / cover no-repeat;
+    background: url(./img/profile.jpg), lightgray 50% / cover no-repeat;
     background-size: cover;
 }
 
@@ -308,7 +308,7 @@ a{
 }
 
 .aboutMeImg{
-    background: url(./day2/img/aboutMe.png) no-repeat;
+    background: url(./img/aboutMe.png) no-repeat;
     background-size:  contain;
     width: 6vw;
     height: 6vw;  
@@ -421,7 +421,7 @@ a{
     height: 21vw;
     flex-shrink: 0;
     border-radius: 1vw;
-    background: url(./day2/img/project1-1.png);
+    background: url(./img/project1-1.png);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -432,7 +432,7 @@ a{
     height: 21vw;
     flex-shrink: 0;
     border-radius: 1vw;
-    background: url(./day2/img/project1-2.png);
+    background: url(./img/project1-2.png);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -443,7 +443,7 @@ a{
     height: 21vw;
     flex-shrink: 0;
     border-radius: 1vw;
-    background: url(./day2/img/project1-3.png);
+    background: url(./img/project1-3.png);
     background-size: contain;
     background-repeat: no-repeat;
 }

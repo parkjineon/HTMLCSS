@@ -192,7 +192,7 @@ a{
 
 
 .aboutMeImg{
-    background: url(./day2/img/aboutMe.png) no-repeat;
+    background: url(./img/aboutMe.png) no-repeat;
     background-size: contain;
     position: absolute;
     top: 12vw;
@@ -310,7 +310,7 @@ a{
     height: 60vw;
     flex-shrink: 0;
     border-radius: 2vw;
-    background: url(./day2/img/project1-1.png)no-repeat;
+    background: url(./img/project1-1.png)no-repeat;
     background-size: contain;
     box-shadow: unset;
 }
@@ -320,7 +320,7 @@ a{
     height: 60vw;
     flex-shrink: 0;
     border-radius: 2vw;
-    background: url(./day2/img/project1-2.png)no-repeat;
+    background: url(./img/project1-2.png)no-repeat;
     background-size: contain;
     box-shadow: unset;
 
@@ -331,7 +331,7 @@ a{
     height: 60vw;
     flex-shrink: 0;
     border-radius: 2vw;
-    background: url(./day2/img/project1-3.png) no-repeat;
+    background: url(./img/project1-3.png) no-repeat;
     background-size: contain;
     box-shadow: unset;
 
