@@ -535,27 +535,26 @@ a{
 
 .reviewBody{
     display: flex;
-    flex-direction: row;
-    gap: 2.5vw;
+    gap:3vw;
 }
 
 .oneReview{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 28vw;
-    height: 15vw;
-    padding: 0 3vw;
+    width: 27vw;
+    height: 18vw;
+    padding: 4vw 3vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2vw;
     font-size: 1vw;
-
     border-radius: 1vw;
     background: #FAFAFA;
     box-shadow: 0vw 0.2vw 1.6vw 0vw rgba(0, 0, 0, 0.15);
 }
+
 
 /*********************/
 /********ending*******/
