@@ -264,7 +264,9 @@ a{
 
 .project{
     display: flex;
-    width:  90vw;
+    width: 90vw;
+    height: 150vw;
+    overflow: unset;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -303,6 +305,7 @@ a{
     display: flex;
     align-items: center;
     gap: 2vw;
+    overflow: hidden;
 }
 
 .project1Img1{
@@ -314,6 +317,25 @@ a{
     background-size: contain;
     box-shadow: unset;
 }
+
+@keyframes elevatorToUp {
+    0% {
+        transform: translateY(60vw);
+    }
+    100% {
+        transform: translateY(-60vw);
+    }
+}
+
+@keyframes elevatorToDown {
+    0% {
+        transform: translateY(-60vw);
+    }
+    100% {
+        transform: translateY(60vw);
+    }
+}
+
 
 .project1Img2{
     width: 28vw;
