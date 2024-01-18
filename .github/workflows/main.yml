@@ -23,3 +23,6 @@ jobs:
       - name: Upload to S3
         run: |
           aws s3 sync web s3://portfolio3783
+
+      - name: Invalidate cloudfront
+        run: aws cloudfront create-invalidation --distribution-id E3SRRD30RRCPTC--paths /*
