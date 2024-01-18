@@ -433,7 +433,9 @@ a{
     background: url(./img/project1-1.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
 
+.moveUp{
     animation-name: elevatorToUp;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -441,6 +443,16 @@ a{
     animation-timing-function : linear;
     animation-fill-mode: backwards;
 }
+
+.moveDown{
+    animation-name: elevatorToDown;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function : linear;
+    animation-fill-mode: backwards;
+}
+
 
 @keyframes elevatorToUp {
     0% {
@@ -469,13 +481,6 @@ a{
     background: url(./img/project1-2.png);
     background-size: contain;
     background-repeat: no-repeat;
-
-    animation-name: elevatorToDown;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function : linear;
-    animation-fill-mode: backwards;
 }
 
 .project1Img3{
@@ -487,12 +492,6 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
 
-    animation-name: elevatorToUp;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function : linear;
-    animation-fill-mode: backwards;
 }
 
 .projects .project .projectDesc .projectLinks .notion{
