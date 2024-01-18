@@ -357,3 +357,29 @@ a{
     text-decoration-line: underline;
 }
 
+
+/**************************/
+/**********review**********/
+/**************************/
+
+
+.reviewTitle{
+    font-size: 2.5vw;
+}
+
+.reviewBody{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.oneReview{
+    width: 80vw;
+    height: 30vw;
+    gap: 5vw;
+    font-size: 2.5vw;
+
+    border-radius: 1vw;
+    background: #FAFAFA;
+    box-shadow: 0vw 0.2vw 1.6vw 0vw rgba(0, 0, 0, 0.15);
+}

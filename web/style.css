@@ -366,7 +366,7 @@ a{
 
 .projects{
     display: flex;
-    padding: 5vw;
+    padding: 5vw 0vw 0vw 0vw;
     width: 100vw;
     box-sizing: border-box;
     flex-direction: column;
@@ -386,7 +386,9 @@ a{
     border-radius: 3vw;
     background: #E6EEFF;
     box-sizing: border-box;
+    overflow: hidden;
 }
+
 
 .projects h1{
     padding: unset;
@@ -476,12 +478,92 @@ a{
 .review{
     box-sizing: border-box;
     width: 100vw;
-    padding: 5vw 10vw;
+    padding: 18vw 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5vw;
 }
 
 .reviewTitle{
-    font-size: 2.5vw;
+    font-size: 1.5vw;
+}
+
+.reviewBody{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+}
+
+.oneReview{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    height: 15vw;
+    padding: 0 3vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1vw;
+
+    border-radius: 1vw;
+    background: #FAFAFA;
+    box-shadow: 0vw 0.2vw 1.6vw 0vw rgba(0, 0, 0, 0.15);
+}
+
+/*********************/
+/********ending*******/
+/*********************/
+
+.ending{
+    display: flex;
+    width: 100vw;
+    height: 30vw;
+    box-sizing: border-box;
+    padding: 0 10vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: #E6EEFF;
+}
+
+.endingWord{
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 60px */
+    letter-spacing: -0.01vw;
+}
+
+/*********************************/
+/************footer***************/
+/*********************************/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 100vw;
+    height: 15vw;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLinks{
+    display: flex;
+    gap: 4vw;
+}
+
+.footerLinks svg{
+    width: 3vw;
+    height: 3vw;
+}
+
+.copyright{
+    font-size: 1.1vw;
 }
