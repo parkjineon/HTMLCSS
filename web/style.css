@@ -378,6 +378,7 @@ a{
 .project{
     display: flex;
     width: 75vw;
+    height: 30vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -418,6 +419,12 @@ a{
     gap: 1.5vw;
 }
 
+.projectImgPath{
+    display:flex;
+    flex-direction: column;
+}
+
+
 .project1Img1{
     width: 10vw;
     height: 21vw;
@@ -427,7 +434,32 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
 
+    animation-name: elevatorToUp;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function : linear;
+    animation-fill-mode: backwards;
 }
+
+@keyframes elevatorToUp {
+    0% {
+        transform: translateY(21vw);
+    }
+    100% {
+        transform: translateY(-21vw);
+    }
+}
+
+@keyframes elevatorToDown {
+    0% {
+        transform: translateY(-21vw);
+    }
+    100% {
+        transform: translateY(21vw);
+    }
+}
+
 
 .project1Img2{
     width: 10vw;
@@ -438,6 +470,12 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
 
+    animation-name: elevatorToDown;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function : linear;
+    animation-fill-mode: backwards;
 }
 
 .project1Img3{
@@ -448,6 +486,13 @@ a{
     background: url(./img/project1-3.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+    animation-name: elevatorToUp;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function : linear;
+    animation-fill-mode: backwards;
 }
 
 .projects .project .projectDesc .projectLinks .notion{
