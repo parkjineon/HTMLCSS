@@ -190,11 +190,26 @@ a{
     letter-spacing: -0.1vw;
 }
 
+
+.aboutMeImg{
+    background: url(./day2/img/aboutMe.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 12vw;
+    right: 3vw;
+    width: 10vw;
+    height: 10vw;  
+}
+
+/***********************/
+/*******stacks**********/
+/***********************/
+
 .stacks{
     display: flex;
     width:100vw;
     box-sizing: border-box;
-    padding: 10vw 0vw;
+    padding: 20vw 0vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -237,82 +252,95 @@ a{
 
 
 .projects{
-    display: none;
-    padding: 80px 120px 120px 120px;
+
+    padding: 20vw 0vw;
+    width: 100vw;
+    box-sizing: border-box;
     flex-direction: column;
-    gap: 30px;
+    gap: 15vw;
     align-items: center;
 
 }
 
 .project{
     display: flex;
-    width: 1120px;
-    flex-direction: row;
+    width:  90vw;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    padding: 30px 0;
-    border-radius: 24px;
+    gap: 3vw;
+    padding: 6vw 5vw;
+    border-radius: 6vw;
     background: #E6EEFF;
+    box-sizing: border-box;
 }
 
 .projects h1{
-    padding: 10px;
+    font-size: 6vw;
+    padding: unset;
 }
 
 .projects .project .projectDesc h1{
     margin: 0;
     padding: 0;
+    font-size: 5vw;
 }
 
 .projectDesc{
     margin: 0;
-    padding: 0;
-    width: 437px;
+    padding: 5vw;
+    width: 90vw;
+    font-size: 4vw;
+    box-sizing: border-box;
 }
 
 .projectLinks{
-    gap: 24px;
+    gap: 3vw;
     display: flex;
 }
 
 .projectImg{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 2vw;
 }
 
 .project1Img1{
-    width: 155px;
-    height: 327px;
+    width: 28vw;
+    height: 60vw;
     flex-shrink: 0;
-    border-radius: 16px;
-    background: url(./day2/img/project1-1.png), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 2vw;
+    background: url(./day2/img/project1-1.png)no-repeat;
+    background-size: contain;
+    box-shadow: unset;
 }
 
 .project1Img2{
-    width: 155px;
-    height: 327px;
+    width: 28vw;
+    height: 60vw;
     flex-shrink: 0;
-    border-radius: 16px;
-    background: url(./day2/img/project1-2.png), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 2vw;
+    background: url(./day2/img/project1-2.png)no-repeat;
+    background-size: contain;
+    box-shadow: unset;
+
 }
 
 .project1Img3{
-    width: 155px;
-    height: 327px;
+    width: 28vw;
+    height: 60vw;
     flex-shrink: 0;
-    border-radius: 16px;
-    background: url(./day2/img/project1-3.png), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 2vw;
+    background: url(./day2/img/project1-3.png) no-repeat;
+    background-size: contain;
+    box-shadow: unset;
+
 }
 
 .projects .project .projectDesc .projectLinks .notion{
     color: #405BA1;
     font-family: Pretendard;
-    font-size: 20px;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 30px */
@@ -322,7 +350,7 @@ a{
 .projects .project .projectDesc .projectLinks .github{
     color: #00446A;
     font-family: Pretendard;
-    font-size: 20px;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 30px */
