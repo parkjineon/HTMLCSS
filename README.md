@@ -1,3 +1,2 @@
-# HTMLCSS
-html, css 스터디
-html, css 수정 중입니다.
+# Portfolio
+웹 포트폴리오 작성
